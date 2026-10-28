@@ -2,6 +2,7 @@
 
 Beide Bibliotheken sind in diesem Projekt bereits vorinstalliert und werden mit den anderen Abhängigkeiten mit dem `npm i`-Befehl installiert.
 
+
 Verschaff dir zunächst einen Überblick über den Code in diesem Projekt: In der App.css ist wieder ein Grid definiert (dieses Mal mit Klassen-Selektoren). Die App.jsx hat drei Kind-Komponenten: Header.jsx, Sidebar.jsx und Map.jsx. Die Daten kommen aus dem Ordner assets:
 
 - 4.5_week.geojson.json - die Datei enthält aktuelle Erdbeben der Stufe 4.5 oder höher. (Quelle: USGS Feed, https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
@@ -46,7 +47,7 @@ Du möchtest mithilfe eines Buttons im Popup Informationen über ein spezielles 
 
 - Füge der App.jsx einen useStateHook hinzu. Der "default"-Wert sollte ein leeres Objekt (`{}`) sein.
 - Erstelle in der Map.jsx, innerhalb der Popup-Komponente, ein HTML button-Element mit onClick-Handler.
-- Leite deine setState-Funktion aus dem Hook mittels Props von der App.jsx an die Map.jsx und übergib sie an den onClick-Handler. Sie soll einfach "d" in State speichern (d ist das jeweilige Erdbeben - die Variable stammt aus der map()-Funktion oberhalb)
+- Leite deine setState-Funktion aus dem Hook mittels Props von der App.jsx an die Map.jsx und übergib sie an den onClick-Handler. Sie soll einfach "d" in State speichern (d ist das jeweilige Erdbeben - die Variable stammt aus der map()-Funktion oberhalb) 
 - Teste mit einem console.log() der State-Variable in der App.jsx sowie durch Klicks auf Buttons in verschiedenen Erdbeben-Popups, dass das jeweilige Erdbeben in React State gespeichert wird.
 - Debugging: Hast du Props auf der Eltern- UND der Kindkomponente definiert? Verwendest du für Props geschwungene Klammern (`{}`) in der Kind-Komponente (Map.jsx)? Ist dein onClick-Handler richtig?
 
@@ -97,7 +98,7 @@ Für manche MUI-Komponenten gibt es kein HTML-Äquivalent. Sie bestehen meist au
 
 - Benutze den Beispiel-Code als Vorlage um deine Seitenleiste mit MUI zu gestalten. Ignoriere das Code-Schnipsel aus dem Beispielcode welches die "Bullets" definiert (`const bull = ...`). Achte wieder auf die Imports, wenn du weitere MUI-Komponenten verwendest.
 
-## Aufgabe 2.4 - Mit einem MUI-Slider die React-Leaflet Karte steuern.
+## Aufgabe 2.4 - Mit einem MUI-Slider die React-Leaflet Karte steuern. hier weiter machen
 
 Die Erdbebenkarte verwendet aktuell den Wert Magnitude und einen fixen Faktor (Aufgabe 1.3) um den Radius der "CircleMarker"-Komponente zu ändern. Dieser Radius soll nun mithilfe eines Sliders in der Sidebar gesteuert werden.
 
